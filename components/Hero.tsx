@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
             <div className="absolute -inset-2 bg-gradient-to-br from-brand-accent to-amber-600 rounded-lg blur opacity-25"></div>
             <div className="relative bg-brand-secondary rounded-lg overflow-hidden p-2">
               <img 
-                src="https://i.ibb.co/gVkn3Vz/ayodeji-johnson-new.jpg"
+                src="/PHOTO-2025-07-05-18-37-11 (2).jpg"
                 alt="Ayodeji Olayinka Johnson" 
                 className="rounded-lg w-full h-auto object-cover" 
               />
