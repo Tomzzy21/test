@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
         <div className="flex justify-center animate-fade-in-up" style={{animationDelay: '0.2s'}}>
           <div className="relative w-full max-w-sm">
             <div className="absolute -inset-2 bg-gradient-to-br from-brand-accent to-amber-600 rounded-lg blur opacity-25"></div>
-            <div className="relative bg-brand-secondary rounded-lg overflow-hidden p-2 h-72">
+            <div className="relative bg-brand-secondary rounded-lg overflow-hidden p-2" style={{ height: '400px' }}>
               <img 
                 src="/PHOTO-2025-07-05-18-37-11 (2).jpg"
                 alt="Ayodeji Olayinka Johnson" 
