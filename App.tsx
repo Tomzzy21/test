@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Quote from './components/Quote';
@@ -11,6 +13,14 @@ import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 const App: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+      once: true,
+      offset: 80,
+      easing: 'ease-in-out',
+    });
+  }, []);
   return (
     <div className="bg-brand-primary text-brand-light font-sans overflow-x-hidden">
       <div 
@@ -23,13 +33,13 @@ const App: React.FC = () => {
       <div className="relative z-10">
         <Header />
         <main>
-          <Hero />
-          <Quote />
-          <Services />
-          <Resume />
-          <Skills />
-          <Testimonials />
-          <Contact />
+          <div data-aos="fade-up"><Hero /></div>
+          <div data-aos="fade-up" data-aos-delay="100"><Quote /></div>
+          <div data-aos="fade-up" data-aos-delay="200"><Services /></div>
+          <div data-aos="fade-up" data-aos-delay="300"><Resume /></div>
+          <div data-aos="fade-up" data-aos-delay="400"><Skills /></div>
+          <div data-aos="fade-up" data-aos-delay="500"><Testimonials /></div>
+          <div data-aos="fade-up" data-aos-delay="600"><Contact /></div>
         </main>
         <Footer />
         <FloatingWhatsApp />
